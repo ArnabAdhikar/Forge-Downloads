@@ -1,18 +1,19 @@
 # Forge downloads
 
-Forge is a native desktop coding harness. This repository contains release downloads; the source repository is maintained separately.
+Forge is a native desktop coding harness. This page provides the published desktop builds.
 
-## Downloads
+## Current release: v0.1.0
 
-Open [Releases](https://github.com/ArnabAdhikar/Forge-Downloads/releases) and download the asset for your platform:
+- [Windows 10/11, x64 installer](https://github.com/ArnabAdhikar/Forge_Harness/releases/download/v0.1.0/Forge-Setup-0.1.0-x64.exe) — installs for your user; no administrator access required.
+- [Linux, x86_64 archive](https://github.com/ArnabAdhikar/Forge_Harness/releases/download/v0.1.0/Forge-Linux-x64.tar.gz) — extract it, then run `bash packaging/install-linux.sh` from the extracted directory. The installer places Forge under `~/.local` and preserves Forge data when uninstalled.
 
-- **Windows 10/11, x64:** `Forge-Setup-<version>-x64.exe`. Run the installer; it installs for your user and does not require administrator access.
-- **Linux, x86_64:** `Forge-Linux-x64.tar.gz`. Extract it, then run `bash packaging/install-linux.sh` from the extracted directory. The installer places Forge under `~/.local` and preserves your Forge data when uninstalled.
+SHA-256 checksums:
+
+- Windows: `18cebd51192bab344ef35203ca768a4142750ad392323264bdb3042ae5d550fd`
+- Linux: `96dbf74595908025cefd6040120e3beb5742dff60a2e4e9836f5bb7beffa8f42`
 
 Linux requires GTK 3, WebKitGTK 4.1, libsoup 3, and the X11 or Wayland runtime libraries. Package names vary by distribution.
 
 Forge needs a provider API key, a running local model server, or separately installed command-line agents, depending on which agents you use.
 
-## Source
-
-The Forge source code is maintained in [Forge_Harness](https://github.com/ArnabAdhikar/Forge_Harness).
+Future builds will be listed under [Releases](https://github.com/ArnabAdhikar/Forge-Downloads/releases).
